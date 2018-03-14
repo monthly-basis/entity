@@ -5,31 +5,31 @@ use DateTime;
 use LeoGalleguillos\Entity\Model\Entity as EntityEntity;
 use PHPUnit\Framework\TestCase;
 
-class TypeTest extends TestCase
+class EntityTypeTest extends TestCase
 {
     protected function setUp()
     {
-        $this->typeEntity = new EntityEntity\Type();
+        $this->entityTypeEntity = new EntityEntity\EntityType();
     }
 
     public function testInitialize()
     {
         $this->assertInstanceOf(
-            EntityEntity\Type::class,
-            $this->typeEntity
+            EntityEntity\EntityType::class,
+            $this->entityTypeEntity
         );
     }
 
     public function testGettersAndSetters()
     {
-        $typeId = 123;
+        $entityTypeId = 123;
         $this->assertSame(
-            $this->typeEntity,
-            $this->typeEntity->setTypeId($typeId)
+            $this->entityTypeEntity,
+            $this->entityTypeEntity->setEntityTypeId($entityTypeId)
         );
         $this->assertSame(
-            $typeId,
-            $this->typeEntity->getTypeId()
+            $entityTypeId,
+            $this->entityTypeEntity->getEntityTypeId()
         );
     }
 }
