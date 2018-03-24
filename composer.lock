@@ -709,12 +709,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6bd77b57707c236833d2b57b968e403df060c9d9"
+                "reference": "ea739aae4742aa4eae1e98d4d06acdbf01692415"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6bd77b57707c236833d2b57b968e403df060c9d9",
-                "reference": "6bd77b57707c236833d2b57b968e403df060c9d9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ea739aae4742aa4eae1e98d4d06acdbf01692415",
+                "reference": "ea739aae4742aa4eae1e98d4d06acdbf01692415",
                 "shasum": ""
             },
             "require": {
@@ -785,7 +785,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-02-26 07:01:09"
+            "time": "2018-03-15 16:51:04"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1062,16 +1062,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "93ade88c83f9e70040fdb8d0b7396d47998dd9f3"
+                "reference": "cd35e43a53ec1c10424a5dec250c30e952e09ced"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/93ade88c83f9e70040fdb8d0b7396d47998dd9f3",
-                "reference": "93ade88c83f9e70040fdb8d0b7396d47998dd9f3",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/cd35e43a53ec1c10424a5dec250c30e952e09ced",
+                "reference": "cd35e43a53ec1c10424a5dec250c30e952e09ced",
                 "shasum": ""
             },
             "require": {
-                "ext-posix": "*",
                 "php": "^7.0"
             },
             "require-dev": {
@@ -1105,7 +1104,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2018-03-02 16:25:54"
+            "time": "2018-03-21 07:21:42"
         },
         {
             "name": "sebastian/exporter",

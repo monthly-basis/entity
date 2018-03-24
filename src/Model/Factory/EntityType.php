@@ -15,11 +15,18 @@ class EntityType
 
     public function buildFromEntityTypeId(int $entityTypeId)
     {
-        $array = $this->entityTypeTable->selectWhereEntityTypeId(
-            $entityTypeId
+        return $this->buildFromArray(
+            $this->entityTypeTable->selectWhereEntityTypeId($entityTypeId)
         );
 
-        return $this->buildFromArray($array);
+    }
+
+    public function buildFromName(string $name)
+    {
+        return $this->buildFromArray(
+            $this->entityTypeTable->selectWhereName($name)
+        );
+
     }
 
     /**
