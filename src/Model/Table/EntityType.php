@@ -60,4 +60,19 @@ class EntityType
         ];
         return $this->adapter->query($sql)->execute($parameters)->current();
     }
+
+    public function selectWhereName(string $name) : array
+    {
+        $sql = '
+            SELECT `entity_type_id`
+                 , `name`
+              FROM `entity_type`
+             WHERE `name` = ?
+                 ;
+        ';
+        $parameters = [
+            $name,
+        ];
+        return $this->adapter->query($sql)->execute($parameters)->current();
+    }
 }
