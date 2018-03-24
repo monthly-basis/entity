@@ -86,5 +86,31 @@ class EntityTypeTest extends TableTestCase
             '2',
             $array['entity_type_id']
         );
+        $this->assertSame(
+            'name2',
+            $array['name']
+        );
+    }
+
+    public function testSelectWhereName()
+    {
+        $this->entityTypeTable->insert(
+            'name'
+        );
+        $this->entityTypeTable->insert(
+            'name2'
+        );
+        $this->entityTypeTable->insert(
+            'name3'
+        );
+        $array = $this->entityTypeTable->selectWhereName('name3');
+        $this->assertSame(
+            '3',
+            $array['entity_type_id']
+        );
+        $this->assertSame(
+            'name3',
+            $array['name']
+        );
     }
 }
