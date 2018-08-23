@@ -48,4 +48,24 @@ class EntityTest extends TableTestCase
             $this->entityTable
         );
     }
+
+    public function testInsert()
+    {
+        $entityId = $this->entityTable->insert(
+            1,
+            12345
+        );
+        $this->assertSame(
+            $entityId,
+            1
+        );
+        $entityId = $this->entityTable->insert(
+            5,
+            54321
+        );
+        $this->assertSame(
+            $entityId,
+            2
+        );
+    }
 }
