@@ -4,4 +4,4 @@ CREATE TABLE `entity` (
     `type_id` int(10) unsigned not null,
     `name` varchar(255) not null,
     PRIMARY KEY (`entity_id`)
-) charset=utf8;
+) CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
