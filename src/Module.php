@@ -31,7 +31,7 @@ class Module
                 },
                 EntityTable\EntityType::class => function ($serviceManager) {
                     return new EntityTable\EntityType(
-                        $serviceManager->get('main')
+                        $serviceManager->get('entity')
                     );
                 },
             ],
