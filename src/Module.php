@@ -29,8 +29,18 @@ class Module
                         $serviceManager->get(EntityTable\EntityType::class)
                     );
                 },
+                EntityTable\Entity::class => function ($serviceManager) {
+                    return new EntityTable\Entity(
+                        $serviceManager->get('entity')
+                    );
+                },
                 EntityTable\EntityType::class => function ($serviceManager) {
                     return new EntityTable\EntityType(
+                        $serviceManager->get('entity')
+                    );
+                },
+                EntityTable\Meta::class => function ($serviceManager) {
+                    return new EntityTable\Meta(
                         $serviceManager->get('entity')
                     );
                 },
