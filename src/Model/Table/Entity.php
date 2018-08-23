@@ -1,8 +1,6 @@
 <?php
 namespace LeoGalleguillos\Entity\Model\Table;
 
-use Exception;
-use Generator;
 use Zend\Db\Adapter\Adapter;
 
 class Entity
@@ -15,5 +13,25 @@ class Entity
     public function __construct(Adapter $adapter)
     {
         $this->adapter = $adapter;
+    }
+
+    public function insert(
+        int $entityTypeId,
+        int $typeId
+    ):int {
+        $sql = '
+            INSERT
+              INTO `entity` (`entity_type_id`, `type_id`)
+            VALUES (?, ?)
+                 ;
+        ';
+        $parameters = [
+            $entityTypeId,
+            $typeId,
+        ];
+        return (int) $this->adapter
+                          ->query($sql)
+                          ->execute($parameters)
+                          ->getGeneratedValue();
     }
 }
