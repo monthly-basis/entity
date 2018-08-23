@@ -1,8 +1,6 @@
 <?php
 namespace LeoGalleguillos\Entity\Model\Factory;
 
-use ArrayObject;
-use DateTime;
 use LeoGalleguillos\Entity\Model\Entity as EntityEntity;
 use LeoGalleguillos\Entity\Model\Table as EntityTable;
 
@@ -13,8 +11,9 @@ class EntityType
         $this->entityTypeTable = $entityTypeTable;
     }
 
-    public function buildFromEntityTypeId(int $entityTypeId)
-    {
+    public function buildFromEntityTypeId(
+        int $entityTypeId
+    ): EntityEntity\EntityType {
         return $this->buildFromArray(
             $this->entityTypeTable->selectWhereEntityTypeId($entityTypeId)
         );
@@ -35,7 +34,7 @@ class EntityType
      * @param array $array
      * @return EntityEntity\EntityType
      */
-    public function buildFromArray(array $array) : EntityEntity\EntityType
+    public function buildFromArray(array $array): EntityEntity\EntityType
     {
         $entityTypeEntity = new EntityEntity\EntityType();
 
