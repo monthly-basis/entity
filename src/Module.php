@@ -24,24 +24,24 @@ class Module
     {
         return [
             'factories' => [
-                EntityFactory\EntityType::class => function ($serviceManager) {
+                EntityFactory\EntityType::class => function ($sm) {
                     return new EntityFactory\EntityType(
-                        $serviceManager->get(EntityTable\EntityType::class)
+                        $sm->get(EntityTable\EntityType::class)
                     );
                 },
-                EntityTable\Entity::class => function ($serviceManager) {
+                EntityTable\Entity::class => function ($sm) {
                     return new EntityTable\Entity(
-                        $serviceManager->get('entity')
+                        $sm->get('entity')
                     );
                 },
-                EntityTable\EntityType::class => function ($serviceManager) {
+                EntityTable\EntityType::class => function ($sm) {
                     return new EntityTable\EntityType(
-                        $serviceManager->get('entity')
+                        $sm->get('entity')
                     );
                 },
-                EntityTable\Meta::class => function ($serviceManager) {
+                EntityTable\Meta::class => function ($sm) {
                     return new EntityTable\Meta(
-                        $serviceManager->get('entity')
+                        $sm->get('entity')
                     );
                 },
             ],
