@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 class MetaTest extends TableTestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->metaTable = new EntityTable\Meta($this->getAdapter());
 

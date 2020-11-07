@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class EntityTypeTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->entityTypeEntity = new EntityEntity\EntityType();
     }

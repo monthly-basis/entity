@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 class EntityTypeTest extends TableTestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->entityTypeTable = new EntityTable\EntityType($this->getAdapter());
 

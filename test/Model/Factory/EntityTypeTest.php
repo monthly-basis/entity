@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class EntityTypeTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->entityTypeTableMock = $this->createMock(
             EntityTable\EntityType::class
