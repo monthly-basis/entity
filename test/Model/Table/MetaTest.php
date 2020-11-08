@@ -4,7 +4,7 @@ namespace LeoGalleguillos\EntityTest\Model\Table;
 use ArrayObject;
 use Exception;
 use LeoGalleguillos\Entity\Model\Table as EntityTable;
-use LeoGalleguillos\Test\TableTestCase;
+use MonthlyBasis\LaminasTest\TableTestCase;
 use Zend\Db\Adapter\Adapter;
 use PHPUnit\Framework\TestCase;
 
