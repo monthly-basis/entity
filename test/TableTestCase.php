@@ -1,5 +1,5 @@
 <?php
-namespace LeoGalleguillos\EntityTest;
+namespace MonthlyBasis\EntityTest;
 
 use Zend\Db\Adapter\Adapter;
 use PHPUnit\Framework\TestCase;

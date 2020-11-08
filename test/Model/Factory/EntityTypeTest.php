@@ -1,10 +1,10 @@
 <?php
-namespace LeoGalleguillos\EntityTest\Model\Factory;
+namespace MonthlyBasis\EntityTest\Model\Factory;
 
-use LeoGalleguillos\Entity\Model\Entity as EntityEntity;
-use LeoGalleguillos\Entity\Model\Factory as EntityFactory;
-use LeoGalleguillos\Entity\Model\Service as EntityService;
-use LeoGalleguillos\Entity\Model\Table as EntityTable;
+use MonthlyBasis\Entity\Model\Entity as EntityEntity;
+use MonthlyBasis\Entity\Model\Factory as EntityFactory;
+use MonthlyBasis\Entity\Model\Service as EntityService;
+use MonthlyBasis\Entity\Model\Table as EntityTable;
 use PHPUnit\Framework\TestCase;
 
 class EntityTypeTest extends TestCase

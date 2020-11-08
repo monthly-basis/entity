@@ -1,9 +1,9 @@
 <?php
-namespace LeoGalleguillos\EntityTest\Model\Table;
+namespace MonthlyBasis\EntityTest\Model\Table;
 
 use ArrayObject;
 use Exception;
-use LeoGalleguillos\Entity\Model\Table as EntityTable;
+use MonthlyBasis\Entity\Model\Table as EntityTable;
 use MonthlyBasis\LaminasTest\TableTestCase;
 use Zend\Db\Adapter\Adapter;
 use PHPUnit\Framework\TestCase;

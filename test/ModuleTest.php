@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\EntityTest;
+namespace MonthlyBasis\EntityTest;
 
-use LeoGalleguillos\Entity\Module;
+use MonthlyBasis\Entity\Module;
 use PHPUnit\Framework\TestCase;
 use Zend\Mvc\Application;
 

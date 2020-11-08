@@ -1,10 +1,10 @@
 <?php
-namespace LeoGalleguillos\Entity;
+namespace MonthlyBasis\Entity;
 
-use LeoGalleguillos\Entity\Model\Factory as EntityFactory;
-use LeoGalleguillos\Entity\Model\Service as EntityService;
-use LeoGalleguillos\Entity\Model\Table as EntityTable;
-use LeoGalleguillos\Entity\View\Helper as EntityHelper;
+use MonthlyBasis\Entity\Model\Factory as EntityFactory;
+use MonthlyBasis\Entity\Model\Service as EntityService;
+use MonthlyBasis\Entity\Model\Table as EntityTable;
+use MonthlyBasis\Entity\View\Helper as EntityHelper;
 
 class Module
 {

@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\Entity\Model\Entity;
+namespace MonthlyBasis\Entity\Model\Entity;
 
-use LeoGalleguillos\Entity\Model\Entity as EntityEntity;
+use MonthlyBasis\Entity\Model\Entity as EntityEntity;
 
 class Entity
 {

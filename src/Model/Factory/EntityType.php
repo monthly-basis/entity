@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\Entity\Model\Factory;
+namespace MonthlyBasis\Entity\Model\Factory;
 
-use LeoGalleguillos\Entity\Model\Entity as EntityEntity;
-use LeoGalleguillos\Entity\Model\Table as EntityTable;
+use MonthlyBasis\Entity\Model\Entity as EntityEntity;
+use MonthlyBasis\Entity\Model\Table as EntityTable;
 
 class EntityType
 {
