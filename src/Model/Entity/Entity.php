@@ -5,14 +5,14 @@ use MonthlyBasis\Entity\Model\Entity as EntityEntity;
 
 class Entity
 {
-    protected $entityId;
+    protected int $entityId;
 
-    public function getEntityId() : int
+    public function getEntityId(): int
     {
         return $this->entityId;
     }
 
-    public function setEntityId(int $entityId) : EntityEntity\Entity
+    public function setEntityId(int $entityId): EntityEntity\Entity
     {
         $this->entityId = $entityId;
         return $this;
