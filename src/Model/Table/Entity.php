@@ -1,7 +1,7 @@
 <?php
 namespace MonthlyBasis\Entity\Model\Table;
 
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 
 class Entity
 {

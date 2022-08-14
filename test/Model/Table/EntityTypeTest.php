@@ -5,7 +5,7 @@ use ArrayObject;
 use Exception;
 use MonthlyBasis\Entity\Model\Table as EntityTable;
 use MonthlyBasis\LaminasTest\TableTestCase;
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 use PHPUnit\Framework\TestCase;
 
 class EntityTypeTest extends TableTestCase
@@ -62,7 +62,7 @@ class EntityTypeTest extends TableTestCase
         );
         $array = $this->entityTypeTable->selectWhereEntityTypeId(2);
         $this->assertSame(
-            '2',
+            2,
             $array['entity_type_id']
         );
         $this->assertSame(
@@ -84,7 +84,7 @@ class EntityTypeTest extends TableTestCase
         );
         $array = $this->entityTypeTable->selectWhereName('name3');
         $this->assertSame(
-            '3',
+            3,
             $array['entity_type_id']
         );
         $this->assertSame(

@@ -5,7 +5,7 @@ use ArrayObject;
 use Exception;
 use MonthlyBasis\Entity\Model\Table as EntityTable;
 use MonthlyBasis\LaminasTest\TableTestCase;
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 use PHPUnit\Framework\TestCase;
 
 class MetaTest extends TableTestCase
